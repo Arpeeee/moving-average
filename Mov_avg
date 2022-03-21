@@ -1,0 +1,12 @@
+import numpy as na
+
+def mon_avg(x, N):
+    ans = np.zeros((len(x),))
+    for i in range(int(N/2),(len(x)-int(N/2)+1)):
+        if np.isnan(x[i]):
+            pass
+        else :
+            ans[i] = np.nanmean(x[i-int(N/2):i+int(N/2)])
+    ans = np.where(ans == 0,np.nan,ans)
+    return ans
+    
