@@ -1,4 +1,4 @@
-import numpy as na
+import numpy as np
 
 def mon_avg(x, N):
     ans = np.zeros((len(x),))
