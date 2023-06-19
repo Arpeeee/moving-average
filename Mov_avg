@@ -1,5 +1,7 @@
 import numpy as np
 
+#N is lenght of data to smooth
+#去頭去尾
 def mon_avg(x, N):
     ans = np.zeros((len(x),))
     for i in range(int(N/2),(len(x)-int(N/2)+1)):
